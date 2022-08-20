@@ -17,10 +17,16 @@ module.exports = {
    networks: {
       hardhat: {},
 
-      moonbase: {
-         url: 'https://rpc.api.moonbase.moonbeam.network',
+      // moonbase: {
+      //    url: 'https://rpc.api.moonbase.moonbeam.network',
+      //    accounts: [privateKey],
+      //    chainId: 1287,
+      // },
+      obscuro: {
+         url: 'http://127.0.0.1:3000/',
          accounts: [privateKey],
-         chainId: 1287,
+         network_id: '777',
+         chainId: 777,
       },
       dev: {
          url: 'http://127.0.0.1:9933',

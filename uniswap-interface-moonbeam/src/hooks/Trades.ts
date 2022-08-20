@@ -20,7 +20,7 @@ function useAllCommonPairs(currencyA?: Currency, currencyB?: Currency): Pair[] {
   const basePairs: [Token, Token][] = useMemo(
     () =>
       flatMap(bases, (base): [Token, Token][] => bases.map(otherBase => [base, otherBase])).filter(
-        ([t0, t1]) => t0.address !== t1.address
+        ([t0, t1]) => t0 && t1 ? t0.address !== t1.address : true
       ),
     [bases]
   )

@@ -16,7 +16,7 @@ import { SwapState } from './reducer'
 import { useUserSlippageTolerance } from '../user/hooks'
 import { computeSlippageAdjustedAmounts } from '../../utils/prices'
 import { useTranslation } from 'react-i18next'
-import { factory, routerv2 } from '../../moonbase_address.json'
+// import { factory, routerv2 } from '../../moonbase_address.json'
 
 export function useSwapState(): AppState['swap'] {
   return useSelector<AppState, AppState['swap']>(state => state.swap)
@@ -88,8 +88,8 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  factory, // v2 factory
-  routerv2 // v2 router 02
+  '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0', //factory, // v2 factory
+  '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9' //routerv2 // v2 router 02
 ]
 
 /**

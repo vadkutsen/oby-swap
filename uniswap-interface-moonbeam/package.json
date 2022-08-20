@@ -44,7 +44,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "ethers": "^5.0.7",
-    "i18next": "^15.0.9",
+    "i18next": "^17.0.0",
     "i18next-browser-languagedetector": "^3.0.1",
     "i18next-xhr-backend": "^2.0.1",
     "inter-ui": "^3.13.1",
@@ -61,7 +61,7 @@
     "react-dom": "^16.13.1",
     "react-feather": "^2.0.8",
     "react-ga": "^2.5.7",
-    "react-i18next": "^10.7.0",
+    "react-i18next": "^10.13.2",
     "react-popper": "^2.2.3",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.0.0",
@@ -78,7 +78,7 @@
     "typescript": "^3.8.3"
   },
   "resolutions": {
-    "immer": "^8.0.1",
+    "immer": "^9.0.15",
     "axios": "^0.21.1"
   },
   "scripts": {

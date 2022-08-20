@@ -118,6 +118,7 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MOONROCK]: 'Moonrock Rococo',
   [ChainId.MOONBASE]: 'Moonbase Alpha',
   [ChainId.MOONSHADOW]: 'Moonshadow Westend',
+  [ChainId.OBSCUROTESTNET]: 'Obscuro Testnet',
 }
 
 export default function Header() {
