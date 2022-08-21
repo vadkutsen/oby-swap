@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "description": "Uniswap Interface",
-  "homepage": "https://vadkutsen.github.io",
+  "homepage": "https://vadkutsen.github.io/obiswap",
   "private": true,
   "devDependencies": {
     "@ethersproject/experimental": "^5.0.1",
