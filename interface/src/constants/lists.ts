@@ -1,6 +1,6 @@
 // the DCTDEX Default token list lives here
 export const DEFAULT_TOKEN_LIST_URL =
-  'https://bafkreibmzpkd5r3pjodssq236eqlaopw3jivrjchlbfzhyeelpywihhbgu.ipfs.nftstorage.link/' // 'https://bafkreiea7b43z5dcuahn5bkjxaw6l4zjgcqbzqmpujyrplkhjf2qfowxqq.ipfs.nftstorage.link' //'https://raw.githubusercontent.com/PureStake/moonbeam-uniswap/main/uniswap-interface-moonbeam/src/tokens.json'
+  'https://bafkreidrx2zliodav3rrs4pdaohn7u5hg2recxkryfu4qavdiywxxiqewi.ipfs.nftstorage.link/' // 'https://bafkreiea7b43z5dcuahn5bkjxaw6l4zjgcqbzqmpujyrplkhjf2qfowxqq.ipfs.nftstorage.link' //'https://raw.githubusercontent.com/PureStake/moonbeam-uniswap/main/uniswap-interface-moonbeam/src/tokens.json'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   DEFAULT_TOKEN_LIST_URL

@@ -9,7 +9,7 @@ export const ROUTER_ADDRESS: { [key: string]: string } = {
   [ChainId.MOONROCK]: routerv2,
   [ChainId.MOONBASE]: routerv2,
   [ChainId.MOONSHADOW]: routerv2,
-  [ChainId.OBSCUROTESTNET]: '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9',
+  [ChainId.OBSCUROTESTNET]: routerv2,
 }
 
 // a list of tokens by chain
