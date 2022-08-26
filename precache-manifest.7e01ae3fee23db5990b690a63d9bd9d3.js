@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e19bb4227af18228bdd87a0a5c6f8dd",
+    "revision": "3d6ab17df83564449c1b5e60525bdb75",
     "url": "/obiswap/index.html"
   },
   {
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/obiswap/static/js/8.1d9d609f.chunk.js"
   },
   {
-    "revision": "018b697ba543a86c0876",
-    "url": "/obiswap/static/js/main.4935ab74.chunk.js"
+    "revision": "dc587f132dd85408189d",
+    "url": "/obiswap/static/js/main.2a2ffe7a.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/obiswap/static/js/main.4935ab74.chunk.js.LICENSE.txt"
+    "url": "/obiswap/static/js/main.2a2ffe7a.chunk.js.LICENSE.txt"
   },
   {
     "revision": "76ffec08815929e57a91",
