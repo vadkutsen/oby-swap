@@ -2,8 +2,8 @@
   "files": {
     "static/js/0.41456899.chunk.js": "/obiswap/static/js/0.41456899.chunk.js",
     "static/js/0.41456899.chunk.js.map": "/obiswap/static/js/0.41456899.chunk.js.map",
-    "main.js": "/obiswap/static/js/main.2a2ffe7a.chunk.js",
-    "main.js.map": "/obiswap/static/js/main.2a2ffe7a.chunk.js.map",
+    "main.js": "/obiswap/static/js/main.20d835c4.chunk.js",
+    "main.js.map": "/obiswap/static/js/main.20d835c4.chunk.js.map",
     "runtime-main.js": "/obiswap/static/js/runtime-main.e1d04a24.js",
     "runtime-main.js.map": "/obiswap/static/js/runtime-main.e1d04a24.js.map",
     "static/css/3.f9ba38d8.chunk.css": "/obiswap/static/css/3.f9ba38d8.chunk.css",
@@ -20,14 +20,14 @@
     "static/js/8.1d9d609f.chunk.js": "/obiswap/static/js/8.1d9d609f.chunk.js",
     "static/js/8.1d9d609f.chunk.js.map": "/obiswap/static/js/8.1d9d609f.chunk.js.map",
     "index.html": "/obiswap/index.html",
-    "precache-manifest.7e01ae3fee23db5990b690a63d9bd9d3.js": "/obiswap/precache-manifest.7e01ae3fee23db5990b690a63d9bd9d3.js",
+    "precache-manifest.345525006bf29e3c46202ee60e773391.js": "/obiswap/precache-manifest.345525006bf29e3c46202ee60e773391.js",
     "service-worker.js": "/obiswap/service-worker.js",
     "static/css/3.f9ba38d8.chunk.css.map": "/obiswap/static/css/3.f9ba38d8.chunk.css.map",
     "static/js/3.b4a594b7.chunk.js.LICENSE.txt": "/obiswap/static/js/3.b4a594b7.chunk.js.LICENSE.txt",
     "static/js/4.d767b802.chunk.js.LICENSE.txt": "/obiswap/static/js/4.d767b802.chunk.js.LICENSE.txt",
     "static/js/5.81c3b756.chunk.js.LICENSE.txt": "/obiswap/static/js/5.81c3b756.chunk.js.LICENSE.txt",
     "static/js/6.6f9aeb34.chunk.js.LICENSE.txt": "/obiswap/static/js/6.6f9aeb34.chunk.js.LICENSE.txt",
-    "static/js/main.2a2ffe7a.chunk.js.LICENSE.txt": "/obiswap/static/js/main.2a2ffe7a.chunk.js.LICENSE.txt",
+    "static/js/main.20d835c4.chunk.js.LICENSE.txt": "/obiswap/static/js/main.20d835c4.chunk.js.LICENSE.txt",
     "static/media/inter.css": "/obiswap/static/media/Inter.var.8dd26c3d.woff2",
     "static/media/arrow-down-blue.svg": "/obiswap/static/media/arrow-down-blue.cd061363.svg",
     "static/media/arrow-down-grey.svg": "/obiswap/static/media/arrow-down-grey.c0dedd2f.svg",
@@ -62,6 +62,6 @@
     "static/js/runtime-main.e1d04a24.js",
     "static/css/3.f9ba38d8.chunk.css",
     "static/js/3.b4a594b7.chunk.js",
-    "static/js/main.2a2ffe7a.chunk.js"
+    "static/js/main.20d835c4.chunk.js"
   ]
 }
