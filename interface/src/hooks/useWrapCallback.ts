@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, DEV, WDEV } from 'obiswap'
+import { Currency, currencyEquals, OBX, WDEV } from 'obiswap'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'
@@ -36,7 +36,7 @@ export default function useWrapCallback(
 
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
 
-    if (inputCurrency === DEV && currencyEquals(WDEV[chainId], outputCurrency)) {
+    if (inputCurrency === OBX && currencyEquals(WDEV[chainId], outputCurrency)) {
       return {
         wrapType: WrapType.WRAP,
         execute:
@@ -44,15 +44,15 @@ export default function useWrapCallback(
             ? async () => {
                 try {
                   const txReceipt = await wethContract.deposit({ value: `0x${inputAmount.raw.toString(16)}` })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} DEV to WDEV` })
+                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} OBX to WDEV` })
                 } catch (error) {
                   console.error('Could not deposit', error)
                 }
               }
             : undefined,
-        inputError: sufficientBalance ? undefined : 'Insufficient DEV balance'
+        inputError: sufficientBalance ? undefined : 'Insufficient OBX balance'
       }
-    } else if (currencyEquals(WDEV[chainId], inputCurrency) && outputCurrency === DEV) {
+    } else if (currencyEquals(WDEV[chainId], inputCurrency) && outputCurrency === OBX) {
       return {
         wrapType: WrapType.UNWRAP,
         execute:

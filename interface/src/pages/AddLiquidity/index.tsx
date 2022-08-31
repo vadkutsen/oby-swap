@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, DEV, TokenAmount, WDEV } from 'obiswap'
+import { Currency, currencyEquals, OBX, TokenAmount, WDEV } from 'obiswap'
 import React, { useCallback, useContext, useState } from 'react'
 import { Plus } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -147,8 +147,8 @@ export default function AddLiquidity({
       method: (...args: any) => Promise<TransactionResponse>,
       args: Array<string | string[] | number>,
       value: BigNumber | null
-    if (currencyA === DEV || currencyB === DEV) {
-      const tokenBIsETH = currencyB === DEV
+    if (currencyA === OBX || currencyB === OBX) {
+      const tokenBIsETH = currencyB === OBX
       estimate = router.estimateGas.addLiquidityETH
       method = router.addLiquidityETH
       args = [

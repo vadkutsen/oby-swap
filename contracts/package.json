@@ -5,7 +5,7 @@
     "@openzeppelin/contracts": "^2.5.0",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "^1.0.1",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.0.2",
     "ethers": "^5.0.31",
     "hardhat": "^2.0.10"
   }

@@ -1,7 +1,7 @@
 import { splitSignature } from '@ethersproject/bytes'
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, DEV, Percent, WDEV } from 'obiswap'
+import { Currency, currencyEquals, OBX, Percent, WDEV } from 'obiswap'
 import React, { useCallback, useContext, useMemo, useState } from 'react'
 import { ArrowDown, Plus } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -205,8 +205,8 @@ export default function RemoveLiquidity({
     const liquidityAmount = parsedAmounts[Field.LIQUIDITY]
     if (!liquidityAmount) throw new Error('missing liquidity amount')
 
-    const currencyBIsETH = currencyB === DEV
-    const oneCurrencyIsETH = currencyA === DEV || currencyBIsETH
+    const currencyBIsETH = currencyB === OBX
+    const oneCurrencyIsETH = currencyA === OBX || currencyBIsETH
     const deadlineFromNow = Math.ceil(Date.now() / 1000) + deadline
 
     if (!tokenA || !tokenB) throw new Error('could not wrap')
@@ -426,7 +426,7 @@ export default function RemoveLiquidity({
     [onUserInput]
   )
 
-  const oneCurrencyIsETH = currencyA === DEV || currencyB === DEV
+  const oneCurrencyIsETH = currencyA === OBX || currencyB === OBX
   const oneCurrencyIsWDEV = Boolean(
     chainId &&
       ((currencyA && currencyEquals(WDEV[chainId], currencyA)) ||
@@ -562,8 +562,8 @@ export default function RemoveLiquidity({
                       <RowBetween style={{ justifyContent: 'flex-end' }}>
                         {oneCurrencyIsETH ? (
                           <StyledInternalLink
-                            to={`/remove/${currencyA === DEV ? WDEV[chainId].address : currencyIdA}/${
-                              currencyB === DEV ? WDEV[chainId].address : currencyIdB
+                            to={`/remove/${currencyA === OBX ? WDEV[chainId].address : currencyIdA}/${
+                              currencyB === OBX ? WDEV[chainId].address : currencyIdB
                             }`}
                           >
                             Receive WDEV

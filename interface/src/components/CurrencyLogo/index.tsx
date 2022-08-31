@@ -1,4 +1,4 @@
-import { Currency, DEV, Token } from 'obiswap'
+import { Currency, OBX, Token } from 'obiswap'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
@@ -34,7 +34,7 @@ export default function CurrencyLogo({
   const uriLocations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
 
   const srcs: string[] = useMemo(() => {
-    if (currency === DEV) return []
+    if (currency === OBX) return []
 
     if (currency instanceof Token) {
       if (currency instanceof WrappedTokenInfo) {
@@ -46,7 +46,7 @@ export default function CurrencyLogo({
     return []
   }, [currency, uriLocations])
 
-  if (currency === DEV) {
+  if (currency === OBX) {
     return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />
   }
 

@@ -23,8 +23,8 @@ module.exports = {
       //    chainId: 1287,
       // },
       obscuro: {
-         url: 'http://127.0.0.1:3000/',
-         accounts: [privateKey],
+         url: 'http://127.0.0.1:3000',
+         accounts: ['ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'],
          network_id: '777',
          chainId: 777,
       },

@@ -1,7 +1,7 @@
-import { ChainId, Currency, CurrencyAmount, DEV, Token, TokenAmount, WDEV } from 'obiswap'
+import { ChainId, Currency, CurrencyAmount, OBX, Token, TokenAmount, WDEV } from 'obiswap'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
-  return chainId && currency === DEV ? WDEV[chainId] : currency instanceof Token ? currency : undefined
+  return chainId && currency === OBX ? WDEV[chainId] : currency instanceof Token ? currency : undefined
 }
 
 export function wrappedCurrencyAmount(
@@ -13,6 +13,6 @@ export function wrappedCurrencyAmount(
 }
 
 export function unwrappedToken(token: Token): Currency {
-  if (token.equals(WDEV[token.chainId])) return DEV
+  if (token.equals(WDEV[token.chainId])) return OBX
   return token
 }

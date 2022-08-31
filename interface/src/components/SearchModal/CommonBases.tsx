@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from 'rebass'
-import { ChainId, Currency, currencyEquals, DEV, Token } from 'obiswap'
+import { ChainId, Currency, currencyEquals, OBX, Token } from 'obiswap'
 import styled from 'styled-components'
 
 import { SUGGESTED_BASES } from '../../constants'
@@ -45,15 +45,15 @@ export default function CommonBases({
       <AutoRow gap="4px">
         <BaseWrapper
           onClick={() => {
-            if (!selectedCurrency || !currencyEquals(selectedCurrency, DEV)) {
-              onSelect(DEV)
+            if (!selectedCurrency || !currencyEquals(selectedCurrency, OBX)) {
+              onSelect(OBX)
             }
           }}
-          disable={selectedCurrency === DEV}
+          disable={selectedCurrency === OBX}
         >
-          <CurrencyLogo currency={DEV} style={{ marginRight: 8 }} />
+          <CurrencyLogo currency={OBX} style={{ marginRight: 8 }} />
           <Text fontWeight={500} fontSize={16}>
-            DEV 
+            OBX
           </Text>
         </BaseWrapper>
         {(chainId ? SUGGESTED_BASES[chainId] : []).map((token: Token) => {

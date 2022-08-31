@@ -29,7 +29,7 @@ export const FACTORY_ADDRESS: { [key: string]: string } = {
   [ChainId.MOONROCK]: factory,
   [ChainId.MOONBASE]: factory,
   [ChainId.MOONSHADOW]: factory,
-  [ChainId.OBSCUROTESTNET]: '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0'
+  [ChainId.OBSCUROTESTNET]: factory
 }
 
 export const INIT_CODE_HASH = '0x01429e880a7972ebfbba904a5bbe32a816e78273e4b38ffa6bdeaebce8adba7c'
