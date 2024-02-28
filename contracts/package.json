@@ -8,5 +8,9 @@
     "dotenv": "^16.0.2",
     "ethers": "^5.0.31",
     "hardhat": "^2.0.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vadkutsen/obiswap"
+    }
 }
