@@ -1,7 +1,7 @@
 {
   "name": "obiswap",
   "license": "MIT",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🛠 An example SDK for building applications on top of Uniswap in Obscuro testnet.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
